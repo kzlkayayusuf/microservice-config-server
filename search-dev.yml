@@ -14,7 +14,7 @@ spring:
         name: search
     data:
         mongodb:
-            database: filterservice
+            database: inventory
             host: localhost
             port: 27017
     kafka:
