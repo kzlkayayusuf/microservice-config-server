@@ -15,8 +15,7 @@ spring:
     data:
         mongodb:
             database: inventory
-            host: localhost
-            port: 27017
+            uri: mongodb://localhost:27017
     kafka:
         consumer:
             auto-offset-reset: earliest
@@ -30,7 +29,7 @@ spring:
                             packages: '*'
             value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
         topic:
-            name: rental_topics
+            name: rental_topics3
 management:
   endpoint:
     metrics:
